@@ -44,33 +44,6 @@ const numbers = [
 ]
 console.log(numbers[0][1])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const logins = ['Anna', 'Tom', 'Bob'];
 const nameLogin = 'Tomi';
 let message = 'Користувача не знайдено';
