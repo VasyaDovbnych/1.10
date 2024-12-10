@@ -19,6 +19,7 @@ console.log(stringWithJoin);
 
 
 
+//2
 const cards = [
   'Карточка-1',
   'Карточка-2',
