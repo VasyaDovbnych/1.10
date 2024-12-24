@@ -93,57 +93,90 @@
 
 
 
-const hotel = {
-    name: 'Hittom',
-    stars: 5,
-    capacity: 250,
-    senMessege: function(){
-        console.log('Welcome')
-    },
+// const hotel = {
+//     name: 'Hittom',
+//     stars: 5,
+//     capacity: 250,
+//     senMessege: function(){
+//         console.log('Welcome')
+//     },
 
-    senMessege(){
-        console.log('Welcome')
-    }
-}
-console.log(hotel);
-
-
-const person = {
-    name: 'Tom',
-    age: 12,
-    gender: 'boy',
-
-    describe(){
-        console.log(`Ім'я: ${this.name} Вік: ${this.age} Стать: ${this.gender}`)
-    }
-} 
-
-console.log(person.describe());
+//     senMessege(){
+//         console.log('Welcome')
+//     }
+// }
+// console.log(hotel);
 
 
+// const person = {
+//     name: 'Tom',
+//     age: 12,
+//     gender: 'boy',
+
+//     describe(){
+//         console.log(`Ім'я: ${this.name} Вік: ${this.age} Стать: ${this.gender}`)
+//     }
+// } 
+
+// console.log(person.describe());
 
 
-const students = [ {
-    name: 'One',
-    age: 11,
-    gender: 'boy',
-    grade: 1
-}, {
-    name: 'Two',
-    age: 17,
-    gender: 'boy',
-    grade: 2
-}
 
-]
-function count (students){
-    let count = 0;
-    let total = 0;
-    for( let i = 0; i < students.length; i++){
-        total += students[i].grade;
-        count++;
-    }
-    return count === 0 ? 0 : total/count;
-}
- const average = count(students)
- console.log(`Середній бал студентів ${average}`);
+
+// const students = [ {
+//     name: 'One',
+//     age: 11,
+//     gender: 'boy',
+//     grade: 1
+// }, {
+//     name: 'Two',
+//     age: 17,
+//     gender: 'boy',
+//     grade: 2
+// }
+
+// ]
+// function count (students){
+//     let count = 0;
+//     let total = 0;
+//     for( let i = 0; i < students.length; i++){
+//         total += students[i].grade;
+//         count++;
+//     }
+//     return count === 0 ? 0 : total/count;
+// }
+//  const average = count(students)
+//  console.log(`Середній бал студентів ${average}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
