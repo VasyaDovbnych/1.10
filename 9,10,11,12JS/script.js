@@ -178,5 +178,131 @@
 
 
 
+// const hotel = {
+//     name: 'Hilton',
+//     stars: 5,
+//     capasity: 250,
+// }
 
+// for(const key in hotel) {
+//     console.log('Key: ', key);
+// }
+
+// for(const key in hotel) {
+//     console.log('value: ', hotel[key]);
+// }
+
+
+
+
+// const hotel = {
+//     name: 'Hilton',
+//     stars: 5,
+//     capasity: 250,
+// }
+// const keys = Object.keys(hotel);
+// console.log(keys);
+
+// const values = Object.values(hotel);
+// console.log(values)
+
+// const entries = Object.entries(hotel);
+// console.log(entries);
+
+
+
+// const hotel = {
+//     name: 'Hilton',
+//     stars: 5,
+//     capasity: 250,
+// }
+
+// const keys = Object.keys(hotel);
+// for(const key of keys) {
+//     console.log('value: ', hotel[key]);
+// }
+
+
+// const entries = Object.entries(hotel);
+// for(const entry of entries) {
+//     const key = entry [0];
+//     const value = entry[1];
+//     console.log(`${key}: ${value}`);
+// }
+
+
+
+
+// const goods = {
+//     apples: 10,
+//     kiwi: 5,
+//     mango: 6,
+//     line: 2,
+// }
+// const values = Object.values(goods);
+
+// let total = 0;
+// for(const value of values) {
+//     total += value;
+// }
+// console.log(total);
+
+
+
+
+// const temp = [20, 24, 18, 22, 20, 21, 23, 25, 27];
+// const min = Math.min(temp);
+// console.log(min);
+
+// const mini = Math.min(...temp);
+// console.log(mini);
+
+
+// const names = ['Alex', 'Sam', 'Bob', 'Tom'];
+// console.log(names);
+
+// const copyNames = [...names];
+// console.log(copyNames);
+
+// console.log(names === copyNames);
+
+// const sliceNames = names.slice();
+// console.log(sliceNames);
+
+
+
+// const names = ['Alex', 'Sam', 'Bob', 'Tom', 'Nick', 'Poll'];
+// const complateNames = [...names, 'Vasyl'];
+// console.log(complateNames);
+
+
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const arr = [...arr1, ...arr2];
+// console.log(arr);
+
+
+
+// const names = ['Alex', 'Sam', 'Bob', 'Tom', 'Nick', 'Poll'];
+// const copy = [...names.slice(0,4), ...names.slice(5)];
+// console.log(copy);
+// const copy1 = [...names.slice(0,1), 'Bibi', ...names.slice(2)];
+// console.log(copy1);
+
+
+
+// const a = {x: 1, y: 2 };
+// const b = {x: 0, n: 3};
+// const c= Object.assign({}, a, b);
+// console.log(c);
+
+// const d = {...a, ...b};
+// console.log(d);
+
+
+const a = {x: 1, y: 2 };
+const b = {x: 0, n: 3};
+const c = {m: 4, ...a, l: 6, ...b};
+console.log(c);
 
