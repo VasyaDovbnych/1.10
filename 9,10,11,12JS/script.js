@@ -342,11 +342,11 @@
 
 
 
-const hotel = {
-    name: 'Hilton',
-    stars: 5,
-    capacity: 250,
-};
+// const hotel = {
+//     name: 'Hilton',
+//     stars: 5,
+//     capacity: 250,
+// };
 // const {name, stars, status} = hotel;
 // console.log(name, stars, status);
 
@@ -368,22 +368,79 @@ const hotel = {
 // console.log(item1);
 // console.log(item2);
 
-const rgb = [200, 255, 100];
-// const [red, green, blue] = rgb;
-// console.log(`Red: ${red}, green: ${green}, blue: ${blue}`)
+// const rgb = [200, 255, 100];
+// // const [red, green, blue] = rgb;
+// // console.log(`Red: ${red}, green: ${green}, blue: ${blue}`)
 
-// const [red, ...colors] = rgb;
-// console.log(`Red: ${red}, colors: ${colors}`);
+// // const [red, ...colors] = rgb;
+// // console.log(`Red: ${red}, colors: ${colors}`);
 
-// const [ , , blue] = rgb;
-// console.log(`Blue: ${blue}`);
+// // const [ , , blue] = rgb;
+// // console.log(`Blue: ${blue}`);
 
-let arr = ['Bob', 'Nick'];
-let [firstName, secondName] = arr;
-console.log(firstName);
-console.log(secondName);
-
-
+// let arr = ['Bob', 'Nick'];
+// let [firstName, secondName] = arr;
+// console.log(firstName);
+// console.log(secondName);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const numb = [1, 2, 3, 4, 5];
+const sum = numb.reduce((acc, value) => acc + value, 0);
+console.log(sum);
+
+
+const twe = [
+    {id: "01", likes: 15, tags: ["js", "react"] },
+    {id: "02", likes: 1125, tags: ["js", "react"] },
+    {id: "03", likes: 32, tags: ["js"] },
+    {id: "04", likes: 135, tags: ["js", "react"] },
+    {id: "05", likes: 115, tags: ["react"] },
+]
+const likes = twe.reduce((totallikes, tweet) => totallikes + tweet.likes, 0);
+console.log(likes)
