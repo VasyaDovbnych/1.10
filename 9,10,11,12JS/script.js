@@ -301,8 +301,89 @@
 // console.log(d);
 
 
-const a = {x: 1, y: 2 };
-const b = {x: 0, n: 3};
-const c = {m: 4, ...a, l: 6, ...b};
-console.log(c);
+// const a = {x: 1, y: 2 };
+// const b = {x: 0, n: 3};
+// const c = {m: 4, ...a, l: 6, ...b};
+// console.log(c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const hotel = {
+    name: 'Hilton',
+    stars: 5,
+    capacity: 250,
+};
+// const {name, stars, status} = hotel;
+// console.log(name, stars, status);
+
+// const {name, ...rest} = hotel;
+// console.log(name);
+// console.log(rest);
+
+// let options = {
+//     size: {
+//         width: 100,
+//         height: 200,
+//     },
+//     items: ['Cake', 'Donut'],
+//     extra: true,
+// };
+// const { size: {width, height}, items: [item1, item2]} = options;
+// console.log(width);
+// console.log(height);
+// console.log(item1);
+// console.log(item2);
+
+const rgb = [200, 255, 100];
+// const [red, green, blue] = rgb;
+// console.log(`Red: ${red}, green: ${green}, blue: ${blue}`)
+
+// const [red, ...colors] = rgb;
+// console.log(`Red: ${red}, colors: ${colors}`);
+
+// const [ , , blue] = rgb;
+// console.log(`Blue: ${blue}`);
+
+let arr = ['Bob', 'Nick'];
+let [firstName, secondName] = arr;
+console.log(firstName);
+console.log(secondName);
+
+
+
+
 
