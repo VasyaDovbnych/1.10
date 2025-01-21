@@ -430,17 +430,136 @@
 
 
 
-const numb = [1, 2, 3, 4, 5];
-const sum = numb.reduce((acc, value) => acc + value, 0);
-console.log(sum);
+// const numb = [1, 2, 3, 4, 5];
+// const sum = numb.reduce((acc, value) => acc + value, 0);
+// console.log(sum);
 
 
-const twe = [
-    {id: "01", likes: 15, tags: ["js", "react"] },
-    {id: "02", likes: 1125, tags: ["js", "react"] },
-    {id: "03", likes: 32, tags: ["js"] },
-    {id: "04", likes: 135, tags: ["js", "react"] },
-    {id: "05", likes: 115, tags: ["react"] },
-]
-const likes = twe.reduce((totallikes, tweet) => totallikes + tweet.likes, 0);
-console.log(likes);
+// const twe = [
+//     {id: "01", likes: 15, tags: ["js", "react"] },
+//     {id: "02", likes: 1125, tags: ["js", "react"] },
+//     {id: "03", likes: 32, tags: ["js"] },
+//     {id: "04", likes: 135, tags: ["js", "react"] },
+//     {id: "05", likes: 115, tags: ["react"] },
+// ]
+// const likes = twe.reduce((totallikes, tweet) => totallikes + tweet.likes, 0);
+// console.log(likes);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const baseSalary = 10000;
+// const overtime = 10;
+// const rate = 10;
+// const getWage = (baseSalary, overtime, rate) => {
+//     return baseSalary + overtime * rate;
+// }
+// getWage(baseSalary, overtime, rate);
+
+// const employee = {
+//     baseSalary: 10000,
+//     overtime:10,
+//     rate:10,
+//     getWage(){
+//         return this.baseSalary + this.overtime * this.rate;
+
+//     }
+
+// }
+// employee.getWage();
+
+
+// const animal = {
+//     eats: true,
+// }
+// const cat = Object.create(animal);
+// cat.meow = true;
+// for (const key in cat) {
+//     if(!cat.hasOwnProperty(key)) continue;
+//     console.log(key);
+// }
+
+
+
+
+// const animal = {
+//     eats: true,
+// }
+// const dog = Object.create(animal);
+// dog.barks = true;
+// const dogKeys = Object.keys(dog);
+// console.log(dogKeys);
+
+class User {
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+    }
+}
+const bob = new User('Bob', 'bob@zakarpatta_net.com');
+console.log(bob);
