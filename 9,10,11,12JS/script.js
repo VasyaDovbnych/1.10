@@ -443,4 +443,4 @@ const twe = [
     {id: "05", likes: 115, tags: ["react"] },
 ]
 const likes = twe.reduce((totallikes, tweet) => totallikes + tweet.likes, 0);
-console.log(likes)
+console.log(likes);
