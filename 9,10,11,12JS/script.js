@@ -556,10 +556,11 @@
 // console.log(dogKeys);
 
 class User {
-    constructor(name, email) {
+    constructor({name, email}) {
         this.name = name;
         this.email = email;
     }
 }
-const bob = new User('Bob', 'bob@zakarpatta_net.com');
-console.log(bob);
+// const bob = new User('Bob', 'bob@zakarpatta_net.com');
+// console.log(bob);
+
