@@ -91,3 +91,98 @@
 
 // const result = calculatePenalty(N, M, roads, A);
 // console.log(result); //Штрафи
+
+
+
+
+
+
+
+
+function calculatePenalty(N, M, roads, A) {
+    const adjacencyList = Array.from({ length: N + 1 }, () => []);
+    
+    for (const [X, Y] of roads) {
+        adjacencyList[X].push(Y);
+        adjacencyList[Y].push(X);
+    }
+    
+    const queue = [[A, 0]];
+    const visited = new Set();
+    visited.add(A);
+    
+    while (queue.length > 0) {
+        const [current, distance] = queue.shift();
+        
+        if (current === 1) {
+            return distance * 1000;
+        }
+        
+        for (const neighbor of adjacencyList[current]) {
+            if (!visited.has(neighbor)) {
+                visited.add(neighbor);
+                queue.push([neighbor, distance + 1]);
+            }
+        }
+    }
+    
+    return -1; // У разі, якщо шлях до столиці не існує
+}
+
+// Приклад використання:
+const N = parseInt(prompt("Введіть кількість міст:"));
+const M = parseInt(prompt("Введіть кількість доріг:"));
+let roads = [];
+for (let i = 0; i < M; i++) {
+    const X = parseInt(prompt(`Введіть початкове місто дороги ${i + 1}:`));
+    const Y = parseInt(prompt(`Введіть кінцеве місто дороги ${i + 1}:`));
+    roads.push([X, Y]);
+}
+const A = parseInt(prompt("Введіть місто, в якому живе Степан:"));
+
+const result = calculatePenalty(N, M, roads, A);
+console.log(result); //Ремонт
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function calculateProductivity(a, b, n, m, k) {
+    let productivity = 0;
+    let currentDay = 1;
+
+    // Переглядаємо кожен день місяця
+    for (let day = 1; day <= k; day++) {
+        // Перевірка, чи є день робочим або вихідним за графіком
+        if ((currentDay - 1) % (a + b) < a) {
+            // Якщо це робочий день і не вихідний
+            if (day % n !== 0) {
+                // Якщо це m-ий робочий день, підвищуємо ефективність
+                if ((day - 1) % m === 0) {
+                    productivity += 2;
+                } else {
+                    productivity += 1;
+                }
+            }
+        }
+        // Переводимо до наступного дня
+        currentDay++;
+    }
+
+    return productivity;
+}
+
+// Вхідні дані
+const [a, b, n, m, k] = [3, 2, 4, 5, 10]; // приклад значень
+
+// Виведення результату
+console.log(calculateProductivity(a, b, n, m, k)); //Скрутні часи
