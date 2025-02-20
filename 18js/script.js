@@ -6,3 +6,21 @@ const players = [
     { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
     { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 ];
+
+
+
+const user = {
+    name: "Іван",
+    age: 25,
+};
+
+
+const baseSalary = 30000;
+const overtime = 10;
+const rate = 20;
+
+const getWage = (baseSalary, overtime, rate) => {
+  return baseSalary + overtime * rate;
+};
+
+getWage(baseSalary, overtime, rate);
