@@ -12,10 +12,10 @@ class User {
 }
   
 const mango = new User({ name: 'Mango', age: 2, followers: 20 });
-mango.getInfo(); // User Mango is 2 years old and has 20 followers
+mango.getInfo(); 
   
 const poly = new User({ name: 'Poly', age: 3, followers: 17 });
-poly.getInfo(); // User Poly is 3 years old and has 17 followers
+poly.getInfo(); 
   
   // Завдання 3
 class Storage {
@@ -43,11 +43,11 @@ const storage = new Storage([
     'Антигравітатор',
 ]);
   
-console.table(storage.getItems()); // Вивід початкового масиву товарів
+console.table(storage.getItems());
   
 storage.addItem('Дроїд');
-console.table(storage.items); // Додаємо "Дроїд"
+console.table(storage.items);
   
 storage.removeItem('Пролонгер');
-console.table(storage.items); // Видаляємо "Пролонгер"
+console.table(storage.items);
   
