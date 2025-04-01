@@ -31,8 +31,8 @@
 
 
 
-const inpuEl = document.querySelector('.js-input');
-const checkboxEl = document.querySelector('.js-license');
+// const inpuEl = document.querySelector('.js-input');
+// const checkboxEl = document.querySelector('.js-license');
 
 
 
