@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <button type="submit" disabled class="js-button">
-    Зареєструватися як <span>Анонім</span>
-  </button>
-  <label>
-    Ім'я
-    <input type="text" class="js-input" />
-  </label>
+  <form class="js-register-form" autocomplete="off">
+    <div role="group">
+      <label>
+        Пошта
+        <input type="email" name="email" />
+      </label>
+      <br>
+      <label>
+        Пароль
+        <input  name="password" type="password" />
+      </label>
+    </div>
 
-  <p>
-    <label>
-      <input type="checkbox" class="js-license" />
-      Приймаю умови договору
-    </label>
-  </p>
+    <br />
+    <div role="group">
+      <b>Тип піписки:</b>
+      <label>
+        <input type="radio" name="subscription" value="free" />
+        Free
+      </label>
+      <label>
+        <input type="radio" name="subscription" value="basic" />
+        Basic
+      </label>
+      <label>
+        <input type="radio" name="subscription" value="pro" />
+        Pro
+      </label>
+    </div>
 
-  <button type="submit" disabled class="js-button">
-    Зареєструватися як <span>Анонім</span>
-  </button>
+    <br />
+    <button type="submit">Зареєструватися</button>
+  </form>
     <script src="./script.js"></script>
 </body>
 </html>
