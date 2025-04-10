@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 2rem;
+}
+h2 {
+    margin-bottom: 1.5rem;
+}
+input[type="number"] {
+    border: none;
+    border-radius: 20px;
+    background-color: #ddd;
+    padding: 0.6rem 1rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    width: 150px;
+}
+#result {
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+  

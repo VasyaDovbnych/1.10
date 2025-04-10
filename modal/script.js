@@ -1,33 +1,58 @@
 'use strict'
-const closeButton = document.querySelector('[data-action="close-modal"]');
-const openButton = document.querySelector('[data-action="open-modal"]');
+const inputs = document.querySelectorAll('input[type="number"]');
+const result = document.getElementById('result');
 
-closeButton.addEventListener('click', toggleModal);
-openButton.addEventListener('click', toggleModal);
-function toggleModal(){
-    document.body.classList.toggle('show-modal');
+function updateMax() {
+  const values = Array.from(inputs)
+    .map(el => parseFloat(el.value))
+    .filter(val => !isNaN(val));
+
+  if (values.length > 0) {
+    const max = Math.max(...values);
+    result.textContent = `Найбільше число, яке ви ввели - ${max}`;
+  } else {
+    result.textContent = `Найбільше число, яке ви ввели - (число)`;
+  }
 }
-window.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && document.body.classList.contains('show-modal')){
-        onBtnClik()
-    }
-})
-const openM = document.getElementById('openButton');
-const closeM = document.getElementById('closeButton');
-const backdropEl = document.querySelector('.backdrop');
 
-openButton.addEventListener('click', () => {
-    document.body.classList.add('show-modal');
+inputs.forEach(input => {
+  input.addEventListener('input', updateMax);
 });
 
-closeButton.addEventListener('click', () => {
-    document.body.classList.remove('show-modal');
-});
 
-backdropEl.addEventListener('click', (event) => {
-    console.log(event.currentTarget);
-    console.log(event.target);
-    if (event.currentTarget === event.target) {
-        document.body.classList.remove('show-modal');
-    }
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
