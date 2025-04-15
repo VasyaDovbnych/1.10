@@ -14,7 +14,7 @@ document.body.appendChild(field);
 const ball = document.createElement('img');
 ball.classList.add('ball');
 ball.alt = "М'яч";
-ball.src = ''; // 🔴 Встав сюди шлях до зображення м’яча, напр.: 'ball.png'
+ball.src = '/football.png'; // 🔴 Встав сюди шлях до зображення м’яча, напр.: 'ball.png'
 field.appendChild(ball);
 
 // Рухаєм м'яч за мишкою
