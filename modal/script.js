@@ -3,17 +3,17 @@
 // Дані з фото
 const scientists = [
   { name: 'Albert Einstein', birth: 1879, death: 1955, img: '/9.jpg' },
-  { name: 'Isaac Newton', birth: 1643, death: 1727, img: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Sir_Isaac_Newton_%281643-1727%29.jpg' },
-  { name: 'Galileo Galilei', birth: 1564, death: 1642, img: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Galileo.arp.300pix.jpg' },
-  { name: 'Marie Curie', birth: 1867, death: 1934, img: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Marie_Curie_c1920.jpg' },
-  { name: 'Johannes Kepler', birth: 1571, death: 1630, img: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Johannes_Kepler_1610.jpg' },
-  { name: 'Nicolaus Copernicus', birth: 1473, death: 1543, img: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Nikolaus_Kopernikus.jpg' },
-  { name: 'Max Planck', birth: 1858, death: 1947, img: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Max_Planck_1933.jpg' },
-  { name: 'Katherine Blodgett', birth: 1898, death: 1979, img: 'https://upload.wikimedia.org/wikipedia/commons/0/01/Katherine_Blodgett.jpg' },
-  { name: 'Ada Lovelace', birth: 1815, death: 1852, img: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Ada_Lovelace_portrait.jpg' },
-  { name: 'Sarah E. Goode', birth: 1855, death: 1905, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sarah_E._Goode.jpg/220px-Sarah_E._Goode.jpg' },
-  { name: 'Lise Meitner', birth: 1878, death: 1968, img: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Lise_Meitner_1946b.jpg' },
-  { name: 'Hanna Hammarström', birth: 1829, death: 1909, img: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Hanna_Hammarstr%C3%B6m.jpg' },
+  { name: 'Isaac Newton', birth: 1643, death: 1727, img: '/3.jpg' },
+  { name: 'Galileo Galilei', birth: 1564, death: 1642, img: '/10.jpg' },
+  { name: 'Marie Curie', birth: 1867, death: 1934, img: '/5.jpg' },
+  { name: 'Johannes Kepler', birth: 1571, death: 1630, img: '/12.jpg' },
+  { name: 'Nicolaus Copernicus', birth: 1473, death: 1543, img: '/2.jpg' },
+  { name: 'Max Planck', birth: 1858, death: 1947, img: '/6.jpg' },
+  { name: 'Katherine Blodgett', birth: 1898, death: 1979, img: '/1.jpg' },
+  { name: 'Ada Lovelace', birth: 1815, death: 1852, img: '/7.jpg' },
+  { name: 'Sarah E. Goode', birth: 1855, death: 1905, img: '/8.jpg' },
+  { name: 'Lise Meitner', birth: 1878, death: 1968, img: '/11.jpg' },
+  { name: 'Hanna Hammarström', birth: 1829, death: 1909, img: '/4.jpg' },
 ];
 
 // Заголовок
