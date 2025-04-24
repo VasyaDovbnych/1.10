@@ -2,7 +2,7 @@
 
 // Дані з фото
 const scientists = [
-  { name: 'Albert Einstein', birth: 1879, death: 1955, img: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg' },
+  { name: 'Albert Einstein', birth: 1879, death: 1955, img: '/9.jpg' },
   { name: 'Isaac Newton', birth: 1643, death: 1727, img: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Sir_Isaac_Newton_%281643-1727%29.jpg' },
   { name: 'Galileo Galilei', birth: 1564, death: 1642, img: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Galileo.arp.300pix.jpg' },
   { name: 'Marie Curie', birth: 1867, death: 1934, img: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Marie_Curie_c1920.jpg' },
